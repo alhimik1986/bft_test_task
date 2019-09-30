@@ -11,10 +11,11 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'language' => 'ru_RU',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '7JRGs69jMDBW8pJKiQBmfjXWmMdA4YuM',
+            'cookieValidationKey' => 'R7hvkyU4iSP_XUn5TD_pJHpVi1vqPY_q',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -43,14 +44,12 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
@@ -71,5 +70,7 @@ if (YII_ENV_DEV) {
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
+
+$config['modules']['cadastral'] = ['class' => 'alhimik1986\bftcadastral\Module'];
 
 return $config;

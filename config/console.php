@@ -45,4 +45,6 @@ if (YII_ENV_DEV) {
     ];
 }
 
+$config['controllerMap']['cadastral'] = ['class' => 'alhimik1986\bftcadastral\commands\CadastralController'];
+
 return $config;
