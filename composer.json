@@ -72,11 +72,11 @@
             "type": "package",
             "package": {
                 "name": "alhimik1986/bftcadastral",
-                "version": "1.7",
+                "version": "1.8",
                 "source": {
                     "url": "https://github.com/alhimik1986/bft_cadastral",
                     "type": "git",
-                    "reference": "v1.7"
+                    "reference": "v1.8"
                 },
                 "autoload": {
                     "psr-4": {
